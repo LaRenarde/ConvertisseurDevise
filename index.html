@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur Monnaie</title>
+    <link rel="stylesheet" href="convertisseur.css">
+</head>
+<body>
+
+    <section id="convertMonney">
+        <h1>Convertisseur de monnaie</h1>
+        <h2>De l'euro jusqu'à la devise de votre choix</h2>
+        <form action="">
+            <label for="name">Convertir :</label>
+
+            <input type="number" id="monnaie" name="monnaie" required >
+
+            <label for="monney-select">Choisissez une devise :</label>
+
+            <select name="monney" id="monney-choice">
+                <option value="">--Choisissez une devise--</option>
+                <option value="dollars" id="dollarUS">U.S. Dollar</option>
+                <option value="livre" id="livreUK">U.K. Pound Sterling</option>
+                <option value="aud" id="dollarAUD">Australian Dollar</option>
+                <option value="cad" id="dollarCAD">Canadian Dollar</option>
+                <option value="jpy" id="japaneseYen">Japanese Yen</option>
+            </select>
+            <button type="submit" id="button">Je convertis</button>
+        </form>
+    </section>
+
+    <script src="convertisseur.js"></script>
+    
+</body>
+</html>
