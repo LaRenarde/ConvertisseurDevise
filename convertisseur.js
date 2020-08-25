@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    let apiUrl = "http://www.floatrates.com/daily/eur.json";
+
+        fetch(apiUrl).then(function (data){ 
+            return data.json()
+        }).then(function (data){
+            console.log(data)
+            //TODO
+
+        })
+    
+      
+
     let input = document.getElementById('monnaie')[0];
 
     let euro = 10;
@@ -25,10 +37,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let convertMonney = document.getElementById('monney-choice').addEventListener('change', function(e) {
         console.log(e);
-       
-    });
 
-
-
-
-});
+})
