@@ -5,6 +5,7 @@ function monnaieChange(apiUrl, ad){
         return data.json()
     }).then(function (data){
         ad(data);  
+
     })
 }
 
