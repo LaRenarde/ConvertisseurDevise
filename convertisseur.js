@@ -20,17 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let input = document.getElementById('monnaie')[0];
 
-    let euro = 10;
-
-    let dollarUS = document.getElementById('dollarUS');
-
-    let livreUK = document.getElementById('livreUK');
-
-    let dollarAUD = document.getElementById('dollarAUD');
-
-    let dollarCAD = document.getElementById('dollarCAD');
-
-    let japaneseYen = document.getElementById('japaneseYen');
 
 
 
