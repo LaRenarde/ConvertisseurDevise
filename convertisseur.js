@@ -12,7 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 let option = document.createElement("option");
                     monneyChoice.appendChild(option)
                     option.innerHTML = data[nom].name
+                    option.setAttribute("value", data[nom].rate)
             };
+
+
+            document.getElementById('monney-choice').addEventListener('change', function (e) {
+                let input = document.getElementById("monnaie").value
+                let valeurEnEuros = input* e.srcElement.value;
+                console.log(valeurEnEuros)
+
+            })
 
         })
     
